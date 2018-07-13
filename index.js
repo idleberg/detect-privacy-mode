@@ -108,7 +108,7 @@ module.exports = function(callback){
       detectInFirefox(resolve,reject,callback);
     }
     // @Internet Explorer / Edge
-    else if( /msie|trident/i.test(ua_lc) || /edge/i.test(ua_lc) )
+    else if(/msie|trident|edge/i.test(ua_lc))
     {
       detectInIEAndEdge(resolve,reject,callback);
     }
